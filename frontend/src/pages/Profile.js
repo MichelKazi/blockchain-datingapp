@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Settings from './components/Settings';
+// import Settings from './components/Settings.js';
 
 class Profile extends Component {
     render() {
@@ -7,7 +7,7 @@ class Profile extends Component {
             <div>
                 My Profile
             
-            <Settings/>
+            {/* <Settings/> */}
             </div>
         );
     }

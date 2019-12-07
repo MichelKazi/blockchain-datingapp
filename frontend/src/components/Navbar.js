@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
-class Settings extends Component {
+class Navbar extends Component {
     render() {
         return (
             <div>
-               Distance Toggle:
-               
+                
             </div>
         );
     }
 }
 
-export default Settings;
+export default Navbar;
