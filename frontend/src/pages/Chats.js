@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
-class Home extends Component {
+class Chats extends Component {
     render() {
         return (
             <div>
-                Pictures of Fake People
-            
+                Chats
             </div>
         );
     }
 }
 
-export default Home;
+export default Chats;
