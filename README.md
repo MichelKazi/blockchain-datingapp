@@ -11,3 +11,5 @@ computer.
 1. 'I found true love' -- user clicks button, proof of love/anonymous submission
 2. If both users do that, it gets saved on the blockchain anonymously
 3. Goes up to the blockchain as 1 credit (a heart)
+
+The **fact** that they have found true love will go down as a transaction in the blockchain and that transaciton will be conisedered a tally. in other words, a creditblitiy will be made -- or a unit of crediblity -- IF our app finds true live. 
