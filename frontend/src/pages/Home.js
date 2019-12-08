@@ -30,6 +30,7 @@ class Home extends Component {
 
     changeColor(){
         this.setState({
+            
             counter: this.state.counter + 1
         })
     }
@@ -47,8 +48,8 @@ class Home extends Component {
         else {  
            
            return (
-                <div>
-                    {this.state.counter} people matched!
+                <div className="pplmatched">
+                   💖{this.state.counter} people matched!💖
                     <i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i> 
                 </div>)  
         }
@@ -63,16 +64,16 @@ class Home extends Component {
                 <h1>Sylvia Ortiz</h1>
                 <p>Age: 24</p>
                 <p>Likes dogs</p>
-                <div classsName="fake">
+                <div className="fake">
                     <span>
                         {/* <img src={smanhoodie} alt="fire"></img> */}
                     </span>
                         <img src={girl} alt="female"></img>
                     <br/>
                     <button onClick ={e => {this.showModal()}}>Like </button> 
+                    </div>
                     <div>
                         {this.matched()}
-                    </div>
                     </div>
                 </div> 
             </div>

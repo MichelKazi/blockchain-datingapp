@@ -1,15 +1,51 @@
+body{
+    
+}
 span {
     display: inline-block;
 }
 img {
-    width: 20%;
+    width: 40%;
+    border-radius: 12px;
 }
 
 .home{
-    height: 100vh;
+    
+    height: 80vh;
 }
 
 .profilepic{
-    margin: 0 120px;
-    border: 1px solid black;
+    -webkit-box-shadow: 10px 10px 35px 1px rgba(0,0,0,0.32);
+-moz-box-shadow: 10px 10px 35px 1px rgba(0,0,0,0.32);
+box-shadow: 10px 10px 35px 1px rgba(0,0,0,0.32);
+    margin: 50px auto;
+    border: .5px solid #ccc;
+    border-radius: 12px;
+}
+
+.profilepic h1 {
+    font-size: 3.5em;
+}
+
+.profilepic p{
+    font-size: 1.5em;
+}
+
+button {
+    padding:  1% 2.5%;
+    border-radius: 5px;
+    background-color: #ff008c;
+    color: #fff;
+    font-size: 1.25em;
+    margin: 15px auto;
+}
+
+.pplmatched{
+    margin-top: 10px;
+    padding: 1% 2.25%;
+    width: 60%;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: #f3bbd7;
+    font-size: 1.4em;
 }
