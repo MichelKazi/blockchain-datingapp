@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import manhoodie from '../images/manhoodie.jpg';
 import '../css/Home.css'
-import girl from '../images/girl.jpg';
+import girl from '../images/girl.png';
 class Home extends Component {
     // const Component = React.createClass({
     //     iframe: function () {
@@ -22,35 +22,41 @@ class Home extends Component {
     // <Component iframe={iframe} />,
     // document.getElementById('container')
 
-    state ={
+    state = {
         show: false ,
         likeCount: "",
-
+        counter: 0,
      }
 
- changeColor(){
-    this.setState({black: !this.state.black})
- }
+    changeColor(){
+        this.setState({
+            counter: this.state.counter + 1
+        })
+    }
 
     showModal = (e) => {
-        this.setState({show: true})
+        this.setState({counter: this.state.counter++,
+            show: true
+        })
     }
 
     matched = () => {
         if(!this.state.show){
              return null;
         } 
-        else {
-           return <div>
-                You have been matched!
-                const style = document.querySelector(.profilepic)
-                <i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i>
-            </div>
+        else {  
+           
+           return (
+                <div>
+                    You have been matched {this.state.counter}!
+                    <i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i> 
+                </div>)  
         }
-
+       
     }
 
     render() {
+        console.log(this.state.counter);
         return (
             <div className="home">
                 <div class = "profilepic">

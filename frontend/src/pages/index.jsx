@@ -158,7 +158,7 @@ class Index extends Component {
         <AppBar position="static" color="default">
           <Toolbar>
             <Typography variant="title" color="inherit">
-              Note Chain
+              Blocks
             </Typography>
           </Toolbar>
         </AppBar>
