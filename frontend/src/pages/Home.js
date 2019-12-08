@@ -21,25 +21,40 @@ class Home extends Component {
     //   const iframe= 'iframe src="https://me.me/embed/i/19676997" width="500" height="593" frameBorder="0" class="meme-embed" style="max-width:100%;margin:0 auto;" allowFullScreen></iframe><p>via <a href="https://me.me">MEME</a></p>'
     // <Component iframe={iframe} />,
     // document.getElementById('container')
-    handleClick = (event) => {
-        
+
+    state ={
+        show: false
     }
 
+    showModal = (e) => {
+        this.setState({show: true})
+    }
+
+    matched = () => {
+        if(!this.state.show){
+             return null;
+        } 
+        else{<div>
+            You have been matched!
+        </div>
+    };
 
     render() {
         return (
-            <div>
+            <div className="home">
                 <p>Sylvia Ortiz</p>
-
-            <div className="fake">
-                <span>
-                    {/* <img src={smanhoodie} alt="fire"></img> */}
-                </span>
-                    <img src={girl} alt="female"></img>
-                <br/>
-                <button onClick ={this.handleClick}>Like </button> 
-            </div> 
-            </div>
+                <div className="fake">
+                    <span>
+                        {/* <img src={smanhoodie} alt="fire"></img> */}
+                    </span>
+                        <img src={girl} alt="female"></img>
+                    <br/>
+                    <button onClick ={e => {this.showModal()}}>Like </button> 
+                    <div>
+                        {this.matched()}
+                    </div>
+                </div> 
+            </div>ss
         );
     }
 }

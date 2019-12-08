@@ -1,0 +1,12 @@
+.navbar{
+    width: 100%;
+    background-color:palevioletred;
+    height: 72px;
+    display:flex;
+    align-items: center;
+    
+}
+.buttons{
+    width: 100%;
+    margin-top: 10px;
+}
