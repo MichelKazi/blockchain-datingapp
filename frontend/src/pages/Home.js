@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import manhoodie from '../images/manhoodie.jpg';
-// import '../css/Home.css'
+import '../css/Home.css'
 import girl from '../images/girl.jpg';
 class Home extends Component {
     // const Component = React.createClass({
@@ -22,20 +22,21 @@ class Home extends Component {
     // <Component iframe={iframe} />,
     // document.getElementById('container')
     handleClick = (event) => {
-
+        
     }
 
 
     render() {
         return (
             <div>
-                Pictures of Fake People
+                <p>Michelles</p>
+
             <div className="twofakes">
             <span>
-                <img src={manhoodie} alt="fire"></img>
+                {/* <img src={manhoodie} alt="fire"></img> */}
             </span>
                 <img src={girl} alt="female"></img>
-           
+            <br/>
             <button onClick ={this.handleClick}>Like </button> 
             </div> 
             </div>
