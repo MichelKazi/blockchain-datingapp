@@ -56,7 +56,7 @@ CONTRACT notechain : public eosio::contract {
 
     ACTION update( name user, std::string& note ) {
       // to sign the action with the given account
-      require_auth( user );
+      // require_auth( user );
 
       // create new / update note depends whether the user account exist or not
       if (isnewuser(user)) {
