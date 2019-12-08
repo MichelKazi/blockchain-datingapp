@@ -25,7 +25,7 @@ class Home extends Component {
     state = {
         show: false ,
         likeCount: "",
-        counter: 0,
+        counter: 1,
      }
 
     changeColor(){
@@ -35,7 +35,7 @@ class Home extends Component {
     }
 
     showModal = (e) => {
-        this.setState({counter: this.state.counter++,
+        this.setState({counter: this.state.counter +1,
             show: true
         })
     }
@@ -48,7 +48,7 @@ class Home extends Component {
            
            return (
                 <div>
-                    You have been matched {this.state.counter}!
+                    {this.state.counter} people matched!
                     <i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i> 
                 </div>)  
         }
