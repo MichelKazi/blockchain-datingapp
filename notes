@@ -1,0 +1,12 @@
+PW5KRoJ6vPg37Df4dnGuDdtxwsf5dMY3jQECaxvoogJGfkoyFLh16
+
+
+eosio-cpp -I include -o notechain.wasm notechain.cpp --abigen
+
+eosio-cpp notechain.cpp -o notechain.wasm
+
+cleos set contract notechain /home/michelkazi/projects/eosio/eosio-project-boilerplate-simple/eosio_docker/contracts/notechain --abi notechain.abi -p notechain@active
+
+cleos set account permission notechain active ‘{“threshold”:1,“keys” [{“key”:“EOS7RUHcEm9HHwDYo14CueHYeoa19VFDtKjEs9BiD6iL86PocFbnP”,“weight”:1}], “accounts”:[{“permission” {“actor”:“default”,“permission”:“notechain”},“weight”:1}]}’
+
+cleos set account permission notechain active '{"threshold":1, "keys":[{"key":"EOS7RUHcEm9HHwDYo14CueHYeoa19VFDtKjEs9BiD6iL86PocFbnP", "weight":1}], "accounts": [{"permission":{"actor":"default","permission":"notechain"},"weight":1}]}' owner -p notechain

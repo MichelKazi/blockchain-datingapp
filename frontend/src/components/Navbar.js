@@ -14,15 +14,7 @@ export default class NavBar extends Component {
   }
 
   render() {
-    let link = {
-      width: "50px",
-      padding: "6px",
-      margin: "6px 12px 6px",
-      background: "antiquewhite",
-      border: "1px groove black",
-      color: "black",
-      text: "center"
-    }
+  
     // if(this.state.btnClick === 'clicked'){
     //   link = {
     //     width: "50px",
@@ -35,15 +27,16 @@ export default class NavBar extends Component {
     // }
     return (
       <div className="navbar">
-          <h2 className="title">Polar</h2>
+          
+          
         <div className="buttons">
-          <NavLink to="/" style={link}>
+          <NavLink to="/" className="buttons">
             Home
           </NavLink>
-          <NavLink to="/about" style={link}>
-            Index
+          <NavLink to="/about" className="buttons">
+            Find People
           </NavLink>
-          <NavLink to="/profile" style={link} >
+          <NavLink to="/profile" className="buttons">
             Profile
           </NavLink>
         </div>
