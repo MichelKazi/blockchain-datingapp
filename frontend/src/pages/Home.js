@@ -23,7 +23,8 @@ class Home extends Component {
     // document.getElementById('container')
 
     state ={
-        show: false
+        show: false ,
+        likeCount: ""
     }
 
     showModal = (e) => {
@@ -34,15 +35,21 @@ class Home extends Component {
         if(!this.state.show){
              return null;
         } 
-        else{<div>
-            You have been matched!
-        </div>
-    };
+        else {
+           return <div>
+                You have been matched!
+                <i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i>
+            </div>
+        }
+
+    }
 
     render() {
         return (
             <div className="home">
-                <p>Sylvia Ortiz</p>
+                <h1>Sylvia Ortiz</h1>
+                <p>Age: 24</p>
+                <p>Likes dogs</p>
                 <div className="fake">
                     <span>
                         {/* <img src={smanhoodie} alt="fire"></img> */}
@@ -54,8 +61,8 @@ class Home extends Component {
                         {this.matched()}
                     </div>
                 </div> 
-            </div>ss
-        );
+            </div>
+        )
     }
 }
 

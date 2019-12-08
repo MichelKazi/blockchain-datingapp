@@ -9,8 +9,10 @@ class Profile extends Component {
     render() {
         return (
             <div>
+                 <h1>Cool guy</h1>
                  <img src={manhoodie} alt="fire"></img>
-            <Settings/>
+            
+            {/* <Settings/> */}
             </div>
         );
     }
