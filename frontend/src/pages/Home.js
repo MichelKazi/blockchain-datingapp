@@ -24,8 +24,13 @@ class Home extends Component {
 
     state ={
         show: false ,
-        likeCount: ""
-    }
+        likeCount: "",
+
+     }
+
+ changeColor(){
+    this.setState({black: !this.state.black})
+ }
 
     showModal = (e) => {
         this.setState({show: true})
@@ -38,6 +43,7 @@ class Home extends Component {
         else {
            return <div>
                 You have been matched!
+                const style = document.querySelector(.profilepic)
                 <i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i><i class="twa twa-heart"></i>
             </div>
         }
@@ -47,10 +53,11 @@ class Home extends Component {
     render() {
         return (
             <div className="home">
+                <div class = "profilepic">
                 <h1>Sylvia Ortiz</h1>
                 <p>Age: 24</p>
                 <p>Likes dogs</p>
-                <div className="fake">
+                <div classsName="fake">
                     <span>
                         {/* <img src={smanhoodie} alt="fire"></img> */}
                     </span>
@@ -59,6 +66,7 @@ class Home extends Component {
                     <button onClick ={e => {this.showModal()}}>Like </button> 
                     <div>
                         {this.matched()}
+                    </div>
                     </div>
                 </div> 
             </div>

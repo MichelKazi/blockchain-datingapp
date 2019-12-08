@@ -10,6 +10,8 @@ class Profile extends Component {
         return (
             <div>
                  <h1>Cool guy</h1>
+                 <p>Age: 26</p>
+                 <p>Likes street fighters</p>
                  <img src={manhoodie} alt="fire"></img>
             
             {/* <Settings/> */}
