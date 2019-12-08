@@ -1,12 +1,27 @@
 .navbar{
     width: 100%;
     background-color:palevioletred;
-    height: 72px;
+    padding: 7% 13%;
     display:flex;
+      
     align-items: center;
     
 }
+
+.title{
+    margin: 0 auto;
+}
 .buttons{
+    font-family: sans-serif;
     width: 100%;
-    margin-top: 10px;
+    display: flex;
+    font-size: 1.35em;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s;
+    color: white;
+}
+
+.buttons:hover{
+    color: #1de5f7
 }

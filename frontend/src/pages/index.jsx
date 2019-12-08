@@ -20,7 +20,7 @@ const endpoint = "http://localhost:8888";
 // NEVER store private keys in any source code in your real life development
 // This is for demo purposes only!
 const accounts = [
-  {"name":"default", "privateKey":"5KYEwpEdtKdBXWdjGEDYfc4hfQe9MKrW1Nq9pVwffnuRYeXuU6J", "publicKey":"EOS7RUHcEm9HHwDYo14CueHYeoa19VFDtKjEs9BiD6iL86PocFbnP"}
+  {"name":"ronny", "privateKey":"5KYEwpEdtKdBXWdjGEDYfc4hfQe9MKrW1Nq9pVwffnuRYeXuU6J", "publicKey":"EOS7RUHcEm9HHwDYo14CueHYeoa19VFDtKjEs9BiD6iL86PocFbnP"}
   
 ];
 // set up styling classes using material-ui "withStyles"
@@ -90,7 +90,7 @@ class Index extends Component {
     try {
       const result = await api.transact({
         actions: [{
-          account: "notechain",
+          account: "ronny",
           name: actionName,
           authorization: [{
             actor: account,
