@@ -29,15 +29,15 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <p>Michelles</p>
+                <p>Sylvia Ortiz</p>
 
-            <div className="twofakes">
-            <span>
-                {/* <img src={manhoodie} alt="fire"></img> */}
-            </span>
-                <img src={girl} alt="female"></img>
-            <br/>
-            <button onClick ={this.handleClick}>Like </button> 
+            <div className="fake">
+                <span>
+                    {/* <img src={smanhoodie} alt="fire"></img> */}
+                </span>
+                    <img src={girl} alt="female"></img>
+                <br/>
+                <button onClick ={this.handleClick}>Like </button> 
             </div> 
             </div>
         );
